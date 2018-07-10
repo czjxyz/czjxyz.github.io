@@ -57,7 +57,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="czjxyz�.github.io"></form>
@@ -90,31 +90,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
-<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>$h[n]=∑(h[n-i-1]*h[i]) (i∈[0,n-1]),h[0]=1$</p>
+        <h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>$h[n]=∑(h[n-i-1]*h[i]) (i∈[0,n-1]),h[0]=1$</p>
 <p>$h[n]=C(2n,n)-C(2n,n-1)=C(2n,n)/(n+1)$</p>
-<h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><ol>
-<li>对于n个节点的二叉树，有多少种不同的组合。</li>
-<li>对于n个1与n个-1的排列，保证对于任意$k∈[1,2n],sum[k]&gt;=0$</li>
-<li>一个无穷大的栈，进栈顺序为$1.2…n$求出栈序列的方案。</li>
-</ol>
-<h3 id="证明-（1）"><a href="#证明-（1）" class="headerlink" title="证明 （1）"></a>证明 （1）</h3><p>比较显然，当我们取出一个节点为根节点是，那么左右节点的和就是n-1，那么如果左节点的节点数为i，那么就会有$h[n-i-1]*h[i]$</p>
-<p>的方案。</p>
-<h3 id="证明（2）"><a href="#证明（2）" class="headerlink" title="证明（2）"></a>证明（2）</h3><p>首先，我们知道一个好的排列是由总排列减坏的排列。</p>
-<p>总排列没问题:$C(2n,n)$</p>
-<p>那么坏的排列要如何枚举</p>
-<p>显然，对于一个序列，由（n-1）个1和（n+1）个-1组成，必然存在一个$k∈[1,n]$满足$sum[2<em>k-1]&lt;0$此时在$[2</em>k,2*n]$中-1比1多1个，然后我们将后面的数取反，那么就可以保证1与-1的数目都为n，但是次序列为坏的序列。</p>
-<p>共有:$C(2n,n-1)$</p>
-<p>所以好的序列由$C(2n,n)-C(2n,n-1)=C(2n,n)/(n+1)$</p>
-<p>为卡特朗数列。</p>
-<h3 id="证明（3）"><a href="#证明（3）" class="headerlink" title="证明（3）"></a>证明（3）</h3><p>将入栈看为1，出栈看为-1，转化为问题2.</p>
-<h2 id="推广"><a href="#推广" class="headerlink" title="推广"></a>推广</h2><p>三维卡特朗：</p>
-<p>$P[n]=2<em>(3</em>n)!/(n!<em>(n+1)!</em>(n+2)!)$</p>
-
+        
+          <p class="article-more-link">
+            <a href="/2018/07/10/卡特朗数列/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="czjxyz�.github.io/2018/07/10/卡特朗数列/" data-id="cjjexrc6d0002lkb6d7qtlbvc" class="article-share-link">Delen</a>
+      <a data-url="czjxyz�.github.io/2018/07/10/卡特朗数列/" data-id="cjjeymvlu0001eob6tgraaujk" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数论/">数论</a></li></ul>
@@ -162,7 +148,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="czjxyz�.github.io/2018/07/10/物流运输/" data-id="cjjexrc73000clkb6qghj8a7i" class="article-share-link">Delen</a>
+      <a data-url="czjxyz�.github.io/2018/07/10/物流运输/" data-id="cjjeymvmr000ceob6jqciav0o" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DP/">DP</a></li></ul>
@@ -207,7 +193,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="czjxyz�.github.io/2018/07/10/乘法逆元/" data-id="cjjexrc6k0004lkb6mf5jebvc" class="article-share-link">Delen</a>
+      <a data-url="czjxyz�.github.io/2018/07/10/乘法逆元/" data-id="cjjeymvlk0000eob6ktqsal0k" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数论/">数论</a></li></ul>
@@ -251,7 +237,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="czjxyz�.github.io/2018/07/10/孙子定理/" data-id="cjjexrc690001lkb6yp8lgpfx" class="article-share-link">Delen</a>
+      <a data-url="czjxyz�.github.io/2018/07/10/孙子定理/" data-id="cjjeymvm80004eob6f9gz9asb" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数论/">数论</a></li></ul>
@@ -294,7 +280,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="czjxyz�.github.io/2018/07/10/扩欧/" data-id="cjjexrc6r0007lkb6xrai0yvq" class="article-share-link">Delen</a>
+      <a data-url="czjxyz�.github.io/2018/07/10/扩欧/" data-id="cjjeymvmh0008eob6hyvhjsj7" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数论/">数论</a></li></ul>
@@ -328,19 +314,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
-<h1 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h1><p>a的b次方求p的模</p>
-<p>把b转化为二进制</p>
-<p>如 b=13=8+4+1</p>
-<p>pow(a,b)=a^8 a^4 a^1</p>
-<p>可以先把a的1次、a的2次，a的4次。。。。预处理出来</p>
-<p>再把b转成二进制，如果第i位是1，那么就乘上a的2i次方。</p>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> M 1000000007</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> a,b,ans=<span class="number">1</span>,base;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;a&gt;&gt;b;base=a;</span><br><span class="line">    <span class="keyword">while</span>(b&gt;<span class="number">0</span>)&#123;</span><br><span class="line">        <span class="keyword">if</span>(b&amp;<span class="number">1</span>) ans*=base,ans%=M;</span><br><span class="line">        base*=base;base%=M;</span><br><span class="line">        b&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;ans;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+        <h2 id="求解"><a href="#求解" class="headerlink" title="求解"></a>求解</h2><p>快速求解a的b次方。</p>
+        
+          <p class="article-more-link">
+            <a href="/2018/07/10/快速幂/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="czjxyz�.github.io/2018/07/10/快速幂/" data-id="cjjexrc6u0009lkb6ox6ek8ht" class="article-share-link">Delen</a>
+      <a data-url="czjxyz�.github.io/2018/07/10/快速幂/" data-id="cjjeymvmb0006eob6hturo3lo" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数论/">数论</a></li></ul>
@@ -384,7 +367,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="czjxyz�.github.io/2018/07/10/尺取/" data-id="cjjexrc6o0005lkb6uh04m8b8" class="article-share-link">Delen</a>
+      <a data-url="czjxyz�.github.io/2018/07/10/尺取/" data-id="cjjeymvmj000aeob6pxlva88a" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/尺取/">尺取</a></li></ul>
@@ -431,7 +414,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="czjxyz�.github.io/2018/07/10/hello-world/" data-id="cjjexrc610000lkb6e4fpetxh" class="article-share-link">Delen</a>
+      <a data-url="czjxyz�.github.io/2018/07/10/hello-world/" data-id="cjjeymvm30003eob69bxol3b1" class="article-share-link">Share</a>
       
       
     </footer>
@@ -451,7 +434,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Labels</h3>
+    <h3 class="widget-title">Tags</h3>
     <div class="widget">
       <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/DP/">DP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/尺取/">尺取</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数论/">数论</a></li></ul>
     </div>
@@ -470,7 +453,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archieven</h3>
+    <h3 class="widget-title">Archives</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li></ul>
     </div>
@@ -480,7 +463,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recente berichten</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
