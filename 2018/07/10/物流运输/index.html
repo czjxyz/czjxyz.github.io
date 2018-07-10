@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>物流运输 | Konnyaku_czjxyz_blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="题目描述背景物流公司要把一批货物从码头A运到码头B。由于货物量比较大，需要n天才能运完。货物运输过程中一般要转 停好几个码头。物流公司通常会设计一条固定的运输路线，以便对整个运输过程实施严格的管理和跟踪。由于各种 因素的存在，有的时候某个码头会无法装卸货物。这时候就必须修改运输路线，让货物能够按时到达目的地。但是 修改路线是一件十分麻烦的事情，会带来额外的成本。因此物流公司希望能够订一个n天的运输">
+<meta property="og:type" content="article">
+<meta property="og:title" content="物流运输">
+<meta property="og:url" content="czjxyz�.github.io/2018/07/10/物流运输/index.html">
+<meta property="og:site_name" content="Konnyaku_czjxyz_blog">
+<meta property="og:description" content="题目描述背景物流公司要把一批货物从码头A运到码头B。由于货物量比较大，需要n天才能运完。货物运输过程中一般要转 停好几个码头。物流公司通常会设计一条固定的运输路线，以便对整个运输过程实施严格的管理和跟踪。由于各种 因素的存在，有的时候某个码头会无法装卸货物。这时候就必须修改运输路线，让货物能够按时到达目的地。但是 修改路线是一件十分麻烦的事情，会带来额外的成本。因此物流公司希望能够订一个n天的运输">
+<meta property="og:updated_time" content="2018-07-10T00:06:39.578Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="物流运输">
+<meta name="twitter:description" content="题目描述背景物流公司要把一批货物从码头A运到码头B。由于货物量比较大，需要n天才能运完。货物运输过程中一般要转 停好几个码头。物流公司通常会设计一条固定的运输路线，以便对整个运输过程实施严格的管理和跟踪。由于各种 因素的存在，有的时候某个码头会无法装卸货物。这时候就必须修改运输路线，让货物能够按时到达目的地。但是 修改路线是一件十分麻烦的事情，会带来额外的成本。因此物流公司希望能够订一个n天的运输">
+  
+    <link rel="alternate" href="/atom.xml" title="Konnyaku_czjxyz_blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Konnyaku_czjxyz_blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">about_OI_note</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="czjxyz�.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-物流运输" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/10/物流运输/" class="article-date">
+  <time datetime="2018-07-09T23:56:15.000Z" itemprop="datePublished">2018-07-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      物流运输
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>物流公司要把一批货物从码头A运到码头B。由于货物量比较大，需要n天才能运完。货物运输过程中一般要转 停好几个码头。物流公司通常会设计一条固定的运输路线，以便对整个运输过程实施严格的管理和跟踪。由于各种 因素的存在，有的时候某个码头会无法装卸货物。这时候就必须修改运输路线，让货物能够按时到达目的地。但是 修改路线是一件十分麻烦的事情，会带来额外的成本。因此物流公司希望能够订一个n天的运输计划，使得总成本 尽可能地小。 </p>
+<h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><p>第一行是四个整数n（1&lt;=n&lt;=100）、m（1&lt;=m&lt;=20）、K和e。n表示货物运输所需天数，m表示码头总数，K表示 每次修改运输路线所需成本。接下来e行每行是一条航线描述，包括了三个整数，依次表示航线连接的两个码头编 号以及航线长度（&gt;0）。其中码头A编号为1，码头B编号为m。单位长度的运输费用为1。航线是双向的。再接下来 一行是一个整数d，后面的d行每行是三个整数P（ 1 &lt; P &lt; m）、a、b（1&lt; = a &lt; = b &lt; = n）。表示编号为P的码 头从第a天到第b天无法装卸货物（含头尾）。同一个码头有可能在多个时间段内不可用。但任何时间都存在至少一 条从码头A到码头B的运输路线。 </p>
+<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><p>包括了一个整数表示最小的总成本。总成本=n天运输路线长度之和+K*改变运输路线的次数。 </p>
+<h3 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h3><p>5 5 10 8<br>1 2 1<br>1 3 3<br>1 4 2<br>2 3 2<br>2 4 4<br>3 4 1<br>3 5 2<br>4 5 2<br>4<br>2 2 3<br>3 1 1<br>3 3 3<br>4 4 5</p>
+<h3 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h3><p>32</p>
+<p>//前三天走1-4-5，后两天走1-3-5，这样总成本为$(2+2)<em>3+(3+2)</em>2+10=32 $</p>
+<a id="more"></a>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>最短路预处理+dp。我们用$cost[i][j]$ 来表示从第i天到第j天航线都不变的花费是多少，也就是说第i到j天被封的港口都无法使用，那么只要将可用的港口取出使用，再跑一遍最短路算法即可。如果直接使用Dijkstra是$O(n^4)$ ,卡常可能会挂，那可以使用Dij+堆或者是spfa，再预处理完就简单了。我们可以发现，在运输的过程中必然会有一段是不变的，那么我们用$dp[i]$来表示前i天的最小花费，那么只需要枚举一个以$i$右端点为i的区间来更新$dp$就好了。这种方法125上的文件排版的方法相类似。</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> M 20</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> inf 1e9+7</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> C[M*<span class="number">5</span>+<span class="number">1</span>],bin[<span class="number">1</span>&lt;&lt;M],B[M+<span class="number">1</span>],vis[M+<span class="number">1</span>],m;</span><br><span class="line"><span class="keyword">int</span> dp[M*M],cost[M*<span class="number">5</span>+<span class="number">1</span>][M*<span class="number">5</span>+<span class="number">1</span>],d[M+<span class="number">1</span>],mp[M+<span class="number">5</span>][M+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Init</span><span class="params">(<span class="keyword">int</span> l,<span class="keyword">int</span> r)</span></span>&#123;<span class="comment">//spfa</span></span><br><span class="line">	<span class="keyword">int</span> bit=(<span class="number">1</span>&lt;&lt;m)<span class="number">-1</span>,cnt=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;i++) d[i]=inf,vis[i]=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=l;i&lt;=r;i++) bit&amp;=C[i];</span><br><span class="line">	<span class="keyword">while</span>(bit)&#123;<span class="comment">//取出可用的天数 </span></span><br><span class="line">		<span class="keyword">int</span> t=bit&amp;-bit;</span><br><span class="line">		B[++cnt]=bin[t];</span><br><span class="line">		bit-=t;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">queue</span>&lt;<span class="keyword">int</span>&gt; q;</span><br><span class="line">	<span class="keyword">while</span>(!q.empty()) q.pop();</span><br><span class="line">	vis[<span class="number">1</span>]=<span class="number">1</span>;q.push(<span class="number">1</span>);d[<span class="number">1</span>]=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span>(!q.empty())&#123;</span><br><span class="line">		<span class="keyword">int</span> now=q.front();</span><br><span class="line">		q.pop(),vis[now]=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=cnt;i++)</span><br><span class="line">			<span class="keyword">if</span>(mp[now][B[i]]!=inf&amp;&amp;d[B[i]]&gt;d[now]+mp[now][B[i]])&#123;</span><br><span class="line">				d[B[i]]=d[now]+mp[now][B[i]];</span><br><span class="line">				<span class="keyword">if</span>(!vis[B[i]])</span><br><span class="line">					q.push(B[i]),vis[B[i]]=<span class="number">1</span>;</span><br><span class="line">			&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span>(d[m]==inf)&#123;<span class="comment">//防止 爆 int </span></span><br><span class="line">		cost[l][r]=inf;</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	cost[l][r]=d[m]*(r-l+<span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">20</span>;i++) bin[<span class="number">1</span>&lt;&lt;i]=i+<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">int</span> n,K,e;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d%d%d%d"</span>,&amp;n,&amp;m,&amp;K,&amp;e);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=m; i++)</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>; j&lt;=m; j++) mp[i][j]=(i!=j)*inf;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=e; i++) &#123;</span><br><span class="line">		<span class="keyword">int</span> x,y,c;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>,&amp;x,&amp;y,&amp;c);</span><br><span class="line">		mp[x][y]=mp[y][x]=min(c,mp[x][y]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">int</span> d;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;d);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) C[i]=(<span class="number">1</span>&lt;&lt;m)<span class="number">-1</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=d; i++) &#123;</span><br><span class="line">		<span class="keyword">int</span> p,st,ed;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>,&amp;p,&amp;st,&amp;ed);</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=st; j&lt;=ed; j++)<span class="comment">//读入，1表示第j天的二进制港口是开的 </span></span><br><span class="line">			<span class="keyword">if</span>(C[j]&amp;(<span class="number">1</span>&lt;&lt;(p<span class="number">-1</span>)))</span><br><span class="line">				C[j]-=(<span class="number">1</span>&lt;&lt;(p<span class="number">-1</span>));</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=n; i++)<span class="comment">//预处理 </span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=i;j++) Init(j,i);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) dp[i]=cost[<span class="number">1</span>][i];</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)<span class="comment">//枚举天数 </span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;i;j++)<span class="comment">//枚举子集 </span></span><br><span class="line">			dp[i]=min(dp[i],dp[j]+cost[j+<span class="number">1</span>][i]+K);</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;dp[n];</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="超时思路（状压）"><a href="#超时思路（状压）" class="headerlink" title="超时思路（状压）"></a>超时思路（状压）</h2><p>我认为有必要写一写，理论的复杂度并不会超时，也就是说卡常了，首先m并不大，我们可以想到状压。之后也是处理$dis[i][bit]$，表示经过$bit$二进制后的港口，最后是$i$的港口。在用$dp[i][bit]$来表示第i天使用$bit$二进制的港口的最小花费，那么不难写出，如果是合法的（也就是所以得港口都可以使用），那么就可以用$dp[i][bit]=min(dp[i-1][bit],best[i-1]+K)+dis[bit][m]$</p>
+<p>来转移（$best[i]$表示i层的最小费用），注意如果要改航线一定要从上层的最优情况进行转移。</p>
+<p>虽然这种写法有人用dfs过了。。</p>
+<h3 id="代码（30分）"><a href="#代码（30分）" class="headerlink" title="代码（30分）"></a>代码（30分）</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> M 20</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> inf 1000000005</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> mp[M+<span class="number">5</span>][M+<span class="number">5</span>],dp_dis[<span class="number">1</span>&lt;&lt;<span class="number">20</span>][M+<span class="number">5</span>],C[M*<span class="number">5</span>+<span class="number">5</span>],best[M*<span class="number">5</span>+<span class="number">5</span>],dp_cost[<span class="number">1</span>&lt;&lt;<span class="number">20</span>][<span class="number">105</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">bit</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">1</span>&lt;&lt;(x<span class="number">-1</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n,m,K,e;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d%d%d%d"</span>,&amp;n,&amp;m,&amp;K,&amp;e);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=m; i++)</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>; j&lt;=m; j++) mp[i][j]=(i!=j)*inf;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=m; i++)</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;(<span class="number">1</span>&lt;&lt;m); j++) dp_dis[j][i]=inf;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=e; i++) &#123;</span><br><span class="line">		<span class="keyword">int</span> x,y,c;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>,&amp;x,&amp;y,&amp;c);</span><br><span class="line">		mp[x][y]=mp[y][x]=min(c,mp[x][y]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=m; i++) dp_dis[bit(i)][i]=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;(<span class="number">1</span>&lt;&lt;m); i++) &#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>; j&lt;=m; j++) &#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> r=<span class="number">1</span>; r&lt;=m; r++) &#123;</span><br><span class="line">				<span class="keyword">if</span>((bit(j)&amp;i)!=<span class="number">0</span>||(bit(r)&amp;i)==<span class="number">0</span>) <span class="keyword">continue</span>;</span><br><span class="line">				dp_dis[i|bit(j)][j]=min(dp_dis[i][r]+mp[r][j],dp_dis[i|bit(j)][j]);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">int</span> d;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;d);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=d; i++) &#123;</span><br><span class="line">		<span class="keyword">int</span> p,st,ed;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>,&amp;p,&amp;st,&amp;ed);</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=st; j&lt;=ed; j++)</span><br><span class="line">			C[j]|=bit(p);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;(<span class="number">1</span>&lt;&lt;(m<span class="number">-1</span>));j++)&#123;</span><br><span class="line">			<span class="keyword">int</span> now=j+bit(m);</span><br><span class="line">			<span class="keyword">if</span>(!(now&amp;<span class="number">1</span>)) <span class="keyword">continue</span>;</span><br><span class="line">			dp_cost[now][i]=inf;</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=n; i++) &#123;</span><br><span class="line">		best[i]=inf;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;(<span class="number">1</span>&lt;&lt;(m<span class="number">-1</span>)); j++) &#123;</span><br><span class="line">			<span class="keyword">int</span> now=j+bit(m);</span><br><span class="line">			<span class="keyword">if</span>(!(now&amp;<span class="number">1</span>)||(now&amp;C[i])!=<span class="number">0</span>) <span class="keyword">continue</span>;</span><br><span class="line">			dp_cost[now][i]=min(dp_cost[now][i<span class="number">-1</span>],best[i<span class="number">-1</span>]+K)+dp_dis[now][m];</span><br><span class="line">			best[i]=min(best[i],dp_cost[now][i]);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d"</span>,best[n]);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>下面附zryabc大佬dfs的代码</p>
+<h3 id="代码（8s，过了）"><a href="#代码（8s，过了）" class="headerlink" title="代码（8s，过了）"></a>代码（8s，过了）</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> GCC optimize(3)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> LL long long</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n,m,K,e,c;</span><br><span class="line"><span class="keyword">int</span> G[<span class="number">25</span>][<span class="number">25</span>];</span><br><span class="line">LL dp[<span class="number">1</span>&lt;&lt;<span class="number">18</span>][<span class="number">2</span>];</span><br><span class="line">LL d[<span class="number">1</span>&lt;&lt;<span class="number">18</span>];</span><br><span class="line">LL tmp[<span class="number">1</span>&lt;&lt;<span class="number">18</span>];</span><br><span class="line"><span class="keyword">int</span> bin[<span class="number">22</span>];</span><br><span class="line">LL INF;</span><br><span class="line"><span class="keyword">bool</span> vis[<span class="number">22</span>];</span><br><span class="line"><span class="keyword">int</span> M[<span class="number">105</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> sta,LL num)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(num&gt;=tmp[sta])<span class="keyword">return</span>;tmp[sta]=num;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;m;i++)</span><br><span class="line">		<span class="keyword">if</span>(!vis[i]&amp;&amp;G[x][i]!=INF)</span><br><span class="line">			vis[i]=<span class="number">1</span>,dfs(i,sta|(<span class="number">1</span>&lt;&lt;(i<span class="number">-2</span>)),num+G[x][i]),vis[i]=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">if</span>(G[x][m]!=INF)d[sta]=min(d[sta],num+G[x][m]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n&gt;&gt;m&gt;&gt;K&gt;&gt;e;</span><br><span class="line">	<span class="built_in">memset</span>(tmp,<span class="number">0x3f</span>,<span class="keyword">sizeof</span>(tmp));</span><br><span class="line">	<span class="built_in">memset</span>(d,<span class="number">0x3f</span>,<span class="keyword">sizeof</span>(d));</span><br><span class="line">	<span class="built_in">memset</span>(G,<span class="number">0x3f</span>,<span class="keyword">sizeof</span>(G));</span><br><span class="line">	INF=G[<span class="number">0</span>][<span class="number">0</span>];</span><br><span class="line">	bin[<span class="number">2</span>]=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">3</span>;i&lt;=m;i++)bin[i]=bin[i<span class="number">-1</span>]&lt;&lt;<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=e;i++)&#123;</span><br><span class="line">		<span class="keyword">int</span> x,y,z;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>,&amp;x,&amp;y,&amp;z);</span><br><span class="line">		G[x][y]=G[y][x]=min(z,G[x][y]);</span><br><span class="line">	&#125; </span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;c;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=c;i++)&#123;</span><br><span class="line">		<span class="keyword">int</span> x,y,z;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>,&amp;x,&amp;y,&amp;z);</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=y;j&lt;=z;j++)</span><br><span class="line">			M[j]|=bin[x];</span><br><span class="line">	&#125;  </span><br><span class="line">	<span class="comment">//对于一天的状态而言，仅等于前一天的最优解转移至此 </span></span><br><span class="line">	vis[<span class="number">1</span>]=<span class="number">1</span>;</span><br><span class="line">	dfs(<span class="number">1</span>,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">	LL last=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;<span class="comment">//枚举天数</span></span><br><span class="line">		LL mi=INF;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;bin[m];j++)&#123;</span><br><span class="line">		 	<span class="keyword">if</span>((j&amp;M[i]))&#123;dp[j][i&amp;<span class="number">1</span>]=INF;<span class="keyword">continue</span>;&#125;</span><br><span class="line">		 	dp[j][i&amp;<span class="number">1</span>]=min(dp[j][~i&amp;<span class="number">1</span>],last+K)+d[j];</span><br><span class="line">		 	mi=min(dp[j][i&amp;<span class="number">1</span>],mi);</span><br><span class="line">		&#125;</span><br><span class="line">		last=mi;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;last&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="czjxyz�.github.io/2018/07/10/物流运输/" data-id="cjjexrc73000clkb6qghj8a7i" class="article-share-link">Delen</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DP/">DP</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/07/10/卡特朗数列/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Nieuwer</strong>
+      <div class="article-nav-title">
+        
+          卡特朗数列
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/07/10/乘法逆元/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title">乘法逆元</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Labels</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/DP/">DP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/尺取/">尺取</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数论/">数论</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/DP/" style="font-size: 10px;">DP</a> <a href="/tags/尺取/" style="font-size: 10px;">尺取</a> <a href="/tags/数论/" style="font-size: 20px;">数论</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archieven</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recente berichten</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/07/10/卡特朗数列/">卡特朗数列</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/10/物流运输/">物流运输</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/10/乘法逆元/">乘法逆元</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/10/孙子定理/">孙子定理</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/10/扩欧/">扩欧</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 czjxyz<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

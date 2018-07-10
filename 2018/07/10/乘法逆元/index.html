@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>乘法逆元 | Konnyaku_czjxyz_blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="解决与应用当我们要求(a/b)%P的时候，由于a，b可能很大，而且模了之后不再支持除法，所以我们要采用求逆元的方法
+假设b存在乘法逆元，即与m互质（充要条件）。设c是b的逆元,即b∗c≡1(mod m),那么有a/b=(a/b)∗1=(a/b)∗b∗c=a∗c(mod m) 即，除以一个数取模等于乘以这个数的逆元取模。
+(就是数论倒数。。。。。)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="乘法逆元">
+<meta property="og:url" content="czjxyz�.github.io/2018/07/10/乘法逆元/index.html">
+<meta property="og:site_name" content="Konnyaku_czjxyz_blog">
+<meta property="og:description" content="解决与应用当我们要求(a/b)%P的时候，由于a，b可能很大，而且模了之后不再支持除法，所以我们要采用求逆元的方法
+假设b存在乘法逆元，即与m互质（充要条件）。设c是b的逆元,即b∗c≡1(mod m),那么有a/b=(a/b)∗1=(a/b)∗b∗c=a∗c(mod m) 即，除以一个数取模等于乘以这个数的逆元取模。
+(就是数论倒数。。。。。)">
+<meta property="og:updated_time" content="2018-07-10T00:03:36.557Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="乘法逆元">
+<meta name="twitter:description" content="解决与应用当我们要求(a/b)%P的时候，由于a，b可能很大，而且模了之后不再支持除法，所以我们要采用求逆元的方法
+假设b存在乘法逆元，即与m互质（充要条件）。设c是b的逆元,即b∗c≡1(mod m),那么有a/b=(a/b)∗1=(a/b)∗b∗c=a∗c(mod m) 即，除以一个数取模等于乘以这个数的逆元取模。
+(就是数论倒数。。。。。)">
+  
+    <link rel="alternate" href="/atom.xml" title="Konnyaku_czjxyz_blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Konnyaku_czjxyz_blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">about_OI_note</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="czjxyz�.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-乘法逆元" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/10/乘法逆元/" class="article-date">
+  <time datetime="2018-07-09T23:55:58.000Z" itemprop="datePublished">2018-07-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      乘法逆元
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="解决与应用"><a href="#解决与应用" class="headerlink" title="解决与应用"></a>解决与应用</h1><p>当我们要求(a/b)%P的时候，由于a，b可能很大，而且模了之后不再支持除法，所以我们要采用求逆元的方法</p>
+<p>假设b存在乘法逆元，即与m互质（充要条件）。设c是b的逆元,即b∗c≡1(mod m),那么有a/b=(a/b)∗1=(a/b)∗b∗c=a∗c(mod m) 即，除以一个数取模等于乘以这个数的逆元取模。</p>
+<p>(就是数论倒数。。。。。)</p>
+<a id="more"></a>
+<h3 id="求的方法"><a href="#求的方法" class="headerlink" title="求的方法"></a>求的方法</h3><p>费马小定理或扩欧</p>
+<h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><p>求组合数C(n,m)%P,P=1e9+7 。</p>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>逆元应用，转除为乘。</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> M 1000005</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> LL long long</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> P 1000000007</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function">LL <span class="title">qikpow</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span></span>&#123;<span class="comment">//a的b次方 </span></span><br><span class="line">    LL base=a,ans=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(b)&#123;</span><br><span class="line">        <span class="keyword">if</span>(b&amp;<span class="number">1</span>) ans*=base,ans%=P;</span><br><span class="line">        base*=base;</span><br><span class="line">        base%=P;</span><br><span class="line">        b&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line">LL A[M];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> T;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;T;</span><br><span class="line">    A[<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=M<span class="number">-5</span>;i++)</span><br><span class="line">        A[i]=A[i<span class="number">-1</span>]*i,A[i]%=P;</span><br><span class="line">    <span class="keyword">while</span>(T--)&#123;</span><br><span class="line">        <span class="keyword">int</span> n,m;</span><br><span class="line">        LL ans=<span class="number">1</span>;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;n,&amp;m);</span><br><span class="line">        LL x=qikpow(A[m],P<span class="number">-2</span>);</span><br><span class="line">        LL y=qikpow(A[n-m],P<span class="number">-2</span>);</span><br><span class="line">        x*=y;x%=P;</span><br><span class="line">        ans=x*A[n];ans%=P;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%lld\n"</span>,ans);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="czjxyz�.github.io/2018/07/10/乘法逆元/" data-id="cjjexrc6k0004lkb6mf5jebvc" class="article-share-link">Delen</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数论/">数论</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/07/10/物流运输/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Nieuwer</strong>
+      <div class="article-nav-title">
+        
+          物流运输
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/07/10/孙子定理/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title">孙子定理</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Labels</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/DP/">DP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/尺取/">尺取</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数论/">数论</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/DP/" style="font-size: 10px;">DP</a> <a href="/tags/尺取/" style="font-size: 10px;">尺取</a> <a href="/tags/数论/" style="font-size: 20px;">数论</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archieven</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recente berichten</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/07/10/卡特朗数列/">卡特朗数列</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/10/物流运输/">物流运输</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/10/乘法逆元/">乘法逆元</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/10/孙子定理/">孙子定理</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/10/扩欧/">扩欧</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 czjxyz<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

@@ -3,21 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hello World | Konnyaku_czjxyz_blog</title>
+  <title>扩欧 | Konnyaku_czjxyz_blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+  <meta name="description" content="求解问题已知a，b，求x，y使得ax+by=gcd（a，b）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="czjxyz�.github.io/2018/07/10/hello-world/index.html">
+<meta property="og:title" content="扩欧">
+<meta property="og:url" content="czjxyz�.github.io/2018/07/10/扩欧/index.html">
 <meta property="og:site_name" content="Konnyaku_czjxyz_blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2016-05-11T01:32:30.000Z">
+<meta property="og:description" content="求解问题已知a，b，求x，y使得ax+by=gcd（a，b）">
+<meta property="og:updated_time" content="2018-07-10T00:05:28.418Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="扩欧">
+<meta name="twitter:description" content="求解问题已知a，b，求x，y使得ax+by=gcd（a，b）">
   
     <link rel="alternate" href="/atom.xml" title="Konnyaku_czjxyz_blog" type="application/atom+xml">
   
@@ -70,10 +67,10 @@ Quick">
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-扩欧" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/07/10/hello-world/" class="article-date">
-  <time datetime="2018-07-09T23:20:21.327Z" itemprop="datePublished">2018-07-10</time>
+    <a href="/2018/07/10/扩欧/" class="article-date">
+  <time datetime="2018-07-09T23:55:28.000Z" itemprop="datePublished">2018-07-10</time>
 </a>
     
   </div>
@@ -84,7 +81,7 @@ Quick">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      扩欧
     </h1>
   
 
@@ -92,37 +89,39 @@ Quick">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h1 id="求解问题"><a href="#求解问题" class="headerlink" title="求解问题"></a>求解问题</h1><p>已知a，b，求x，y使得ax+by=gcd（a，b）</p>
+<a id="more"></a>
+<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>利用欧几里得递推可得<br>gcd(a,b)=gcd(b,a%b)<br>ax+by=bX+(a%b)Y<br>(b(a/b)+a%b)x+by=bX+(a%b)Y<br>b((a/b)x+y-X)+(a%b)(x-Y)=0<br>–&gt;<br>X=(a/b)x+y,Y=x<br>以上便递推式</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> LL long long</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line">LL a,b,x=<span class="number">1</span>,y=<span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">gcd</span><span class="params">(LL n,LL m)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(m==<span class="number">0</span>) <span class="keyword">return</span>;</span><br><span class="line">    gcd(m,n%m);</span><br><span class="line">    LL p=x;</span><br><span class="line">    x=y;</span><br><span class="line">    y=p-n/m*y;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    ios::sync_with_stdio(<span class="literal">false</span>);</span><br><span class="line">    LL a,b; </span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;a&gt;&gt;b;</span><br><span class="line">    gcd(a,b);</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;(x+b)%b;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="czjxyz�.github.io/2018/07/10/hello-world/" data-id="cjjexrc610000lkb6e4fpetxh" class="article-share-link">Delen</a>
+      <a data-url="czjxyz�.github.io/2018/07/10/扩欧/" data-id="cjjexrc6r0007lkb6xrai0yvq" class="article-share-link">Delen</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数论/">数论</a></li></ul>
+
     </footer>
   </div>
   
     
 <nav id="article-nav">
   
-    <a href="/2018/07/10/尺取/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/07/10/孙子定理/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Nieuwer</strong>
       <div class="article-nav-title">
         
-          尺取
+          孙子定理
         
       </div>
     </a>
   
+  
+    <a href="/2018/07/10/快速幂/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title">快速幂</div>
+    </a>
   
 </nav>
 

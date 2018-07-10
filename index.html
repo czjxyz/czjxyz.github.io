@@ -57,7 +57,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Søk"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="czjxyz�.github.io"></form>
@@ -67,6 +67,334 @@
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-卡特朗数列" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/10/卡特朗数列/" class="article-date">
+  <time datetime="2018-07-09T23:56:30.000Z" itemprop="datePublished">2018-07-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/10/卡特朗数列/">卡特朗数列</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <a id="more"></a>
+<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>$h[n]=∑(h[n-i-1]*h[i]) (i∈[0,n-1]),h[0]=1$</p>
+<p>$h[n]=C(2n,n)-C(2n,n-1)=C(2n,n)/(n+1)$</p>
+<h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><ol>
+<li>对于n个节点的二叉树，有多少种不同的组合。</li>
+<li>对于n个1与n个-1的排列，保证对于任意$k∈[1,2n],sum[k]&gt;=0$</li>
+<li>一个无穷大的栈，进栈顺序为$1.2…n$求出栈序列的方案。</li>
+</ol>
+<h3 id="证明-（1）"><a href="#证明-（1）" class="headerlink" title="证明 （1）"></a>证明 （1）</h3><p>比较显然，当我们取出一个节点为根节点是，那么左右节点的和就是n-1，那么如果左节点的节点数为i，那么就会有$h[n-i-1]*h[i]$</p>
+<p>的方案。</p>
+<h3 id="证明（2）"><a href="#证明（2）" class="headerlink" title="证明（2）"></a>证明（2）</h3><p>首先，我们知道一个好的排列是由总排列减坏的排列。</p>
+<p>总排列没问题:$C(2n,n)$</p>
+<p>那么坏的排列要如何枚举</p>
+<p>显然，对于一个序列，由（n-1）个1和（n+1）个-1组成，必然存在一个$k∈[1,n]$满足$sum[2<em>k-1]&lt;0$此时在$[2</em>k,2*n]$中-1比1多1个，然后我们将后面的数取反，那么就可以保证1与-1的数目都为n，但是次序列为坏的序列。</p>
+<p>共有:$C(2n,n-1)$</p>
+<p>所以好的序列由$C(2n,n)-C(2n,n-1)=C(2n,n)/(n+1)$</p>
+<p>为卡特朗数列。</p>
+<h3 id="证明（3）"><a href="#证明（3）" class="headerlink" title="证明（3）"></a>证明（3）</h3><p>将入栈看为1，出栈看为-1，转化为问题2.</p>
+<h2 id="推广"><a href="#推广" class="headerlink" title="推广"></a>推广</h2><p>三维卡特朗：</p>
+<p>$P[n]=2<em>(3</em>n)!/(n!<em>(n+1)!</em>(n+2)!)$</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="czjxyz�.github.io/2018/07/10/卡特朗数列/" data-id="cjjexrc6d0002lkb6d7qtlbvc" class="article-share-link">Delen</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数论/">数论</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-物流运输" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/10/物流运输/" class="article-date">
+  <time datetime="2018-07-09T23:56:15.000Z" itemprop="datePublished">2018-07-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/10/物流运输/">物流运输</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>物流公司要把一批货物从码头A运到码头B。由于货物量比较大，需要n天才能运完。货物运输过程中一般要转 停好几个码头。物流公司通常会设计一条固定的运输路线，以便对整个运输过程实施严格的管理和跟踪。由于各种 因素的存在，有的时候某个码头会无法装卸货物。这时候就必须修改运输路线，让货物能够按时到达目的地。但是 修改路线是一件十分麻烦的事情，会带来额外的成本。因此物流公司希望能够订一个n天的运输计划，使得总成本 尽可能地小。 </p>
+<h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><p>第一行是四个整数n（1&lt;=n&lt;=100）、m（1&lt;=m&lt;=20）、K和e。n表示货物运输所需天数，m表示码头总数，K表示 每次修改运输路线所需成本。接下来e行每行是一条航线描述，包括了三个整数，依次表示航线连接的两个码头编 号以及航线长度（&gt;0）。其中码头A编号为1，码头B编号为m。单位长度的运输费用为1。航线是双向的。再接下来 一行是一个整数d，后面的d行每行是三个整数P（ 1 &lt; P &lt; m）、a、b（1&lt; = a &lt; = b &lt; = n）。表示编号为P的码 头从第a天到第b天无法装卸货物（含头尾）。同一个码头有可能在多个时间段内不可用。但任何时间都存在至少一 条从码头A到码头B的运输路线。 </p>
+<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><p>包括了一个整数表示最小的总成本。总成本=n天运输路线长度之和+K*改变运输路线的次数。 </p>
+<h3 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h3><p>5 5 10 8<br>1 2 1<br>1 3 3<br>1 4 2<br>2 3 2<br>2 4 4<br>3 4 1<br>3 5 2<br>4 5 2<br>4<br>2 2 3<br>3 1 1<br>3 3 3<br>4 4 5</p>
+<h3 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h3><p>32</p>
+<p>//前三天走1-4-5，后两天走1-3-5，这样总成本为$(2+2)<em>3+(3+2)</em>2+10=32 $</p>
+        
+          <p class="article-more-link">
+            <a href="/2018/07/10/物流运输/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="czjxyz�.github.io/2018/07/10/物流运输/" data-id="cjjexrc73000clkb6qghj8a7i" class="article-share-link">Delen</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DP/">DP</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-乘法逆元" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/10/乘法逆元/" class="article-date">
+  <time datetime="2018-07-09T23:55:58.000Z" itemprop="datePublished">2018-07-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/10/乘法逆元/">乘法逆元</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="解决与应用"><a href="#解决与应用" class="headerlink" title="解决与应用"></a>解决与应用</h1><p>当我们要求(a/b)%P的时候，由于a，b可能很大，而且模了之后不再支持除法，所以我们要采用求逆元的方法</p>
+<p>假设b存在乘法逆元，即与m互质（充要条件）。设c是b的逆元,即b∗c≡1(mod m),那么有a/b=(a/b)∗1=(a/b)∗b∗c=a∗c(mod m) 即，除以一个数取模等于乘以这个数的逆元取模。</p>
+<p>(就是数论倒数。。。。。)</p>
+        
+          <p class="article-more-link">
+            <a href="/2018/07/10/乘法逆元/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="czjxyz�.github.io/2018/07/10/乘法逆元/" data-id="cjjexrc6k0004lkb6mf5jebvc" class="article-share-link">Delen</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数论/">数论</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-孙子定理" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/10/孙子定理/" class="article-date">
+  <time datetime="2018-07-09T23:55:45.000Z" itemprop="datePublished">2018-07-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/10/孙子定理/">孙子定理</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="求解问题"><a href="#求解问题" class="headerlink" title="求解问题"></a>求解问题</h1><p>同余方程组</p>
+<p>已知x%Ai=Bi 求x</p>
+        
+          <p class="article-more-link">
+            <a href="/2018/07/10/孙子定理/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="czjxyz�.github.io/2018/07/10/孙子定理/" data-id="cjjexrc690001lkb6yp8lgpfx" class="article-share-link">Delen</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数论/">数论</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-扩欧" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/10/扩欧/" class="article-date">
+  <time datetime="2018-07-09T23:55:28.000Z" itemprop="datePublished">2018-07-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/10/扩欧/">扩欧</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="求解问题"><a href="#求解问题" class="headerlink" title="求解问题"></a>求解问题</h1><p>已知a，b，求x，y使得ax+by=gcd（a，b）</p>
+        
+          <p class="article-more-link">
+            <a href="/2018/07/10/扩欧/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="czjxyz�.github.io/2018/07/10/扩欧/" data-id="cjjexrc6r0007lkb6xrai0yvq" class="article-share-link">Delen</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数论/">数论</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-快速幂" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/10/快速幂/" class="article-date">
+  <time datetime="2018-07-09T23:55:15.000Z" itemprop="datePublished">2018-07-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/10/快速幂/">快速幂</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <a id="more"></a>
+<h1 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h1><p>a的b次方求p的模</p>
+<p>把b转化为二进制</p>
+<p>如 b=13=8+4+1</p>
+<p>pow(a,b)=a^8 a^4 a^1</p>
+<p>可以先把a的1次、a的2次，a的4次。。。。预处理出来</p>
+<p>再把b转成二进制，如果第i位是1，那么就乘上a的2i次方。</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> M 1000000007</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> a,b,ans=<span class="number">1</span>,base;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;a&gt;&gt;b;base=a;</span><br><span class="line">    <span class="keyword">while</span>(b&gt;<span class="number">0</span>)&#123;</span><br><span class="line">        <span class="keyword">if</span>(b&amp;<span class="number">1</span>) ans*=base,ans%=M;</span><br><span class="line">        base*=base;base%=M;</span><br><span class="line">        b&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;ans;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="czjxyz�.github.io/2018/07/10/快速幂/" data-id="cjjexrc6u0009lkb6ox6ek8ht" class="article-share-link">Delen</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数论/">数论</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-尺取" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/10/尺取/" class="article-date">
+  <time datetime="2018-07-09T23:53:42.000Z" itemprop="datePublished">2018-07-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/10/尺取/">尺取</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="知识点梳理"><a href="#知识点梳理" class="headerlink" title="知识点梳理"></a>知识点梳理</h1><p>尺取法：顾名思义，像尺子一样取一段，借用挑战书上面的话说，尺取法通常是对数组保存一对下标，即所选取的区间的左右端点，然后根据实际情况不断地推进区间左右端点以得出答案。之所以需要掌握这个技巧，是因为尺取法比直接暴力枚举区间效率高很多，尤其是数据量大的 。（摘自百度）</p>
+<p>一道题目，用尺取法需知在什么时候移动那个下标，这样移动下标的正确性。也就是说，对于处理完的区间，要满足单调性，对于固定的左端点，找出满足解的最近右端点，在右端点之后的左端点都能满足题意，那么这一组解就是我们需要的，再移动做端点。</p>
+        
+          <p class="article-more-link">
+            <a href="/2018/07/10/尺取/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="czjxyz�.github.io/2018/07/10/尺取/" data-id="cjjexrc6o0005lkb6uh04m8b8" class="article-share-link">Delen</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/尺取/">尺取</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -103,7 +431,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="czjxyz�.github.io/2018/07/10/hello-world/" data-id="cjjex2sx40000qgb6hdigymkm" class="article-share-link">Share</a>
+      <a data-url="czjxyz�.github.io/2018/07/10/hello-world/" data-id="cjjexrc610000lkb6e4fpetxh" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -122,13 +450,27 @@
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Labels</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/DP/">DP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/尺取/">尺取</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数论/">数论</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/DP/" style="font-size: 10px;">DP</a> <a href="/tags/尺取/" style="font-size: 10px;">尺取</a> <a href="/tags/数论/" style="font-size: 20px;">数论</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Arkiv</h3>
+    <h3 class="widget-title">Archieven</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li></ul>
     </div>
@@ -138,12 +480,28 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Siste innlegg</h3>
+    <h3 class="widget-title">Recente berichten</h3>
     <div class="widget">
       <ul>
         
           <li>
-            <a href="/2018/07/10/hello-world/">Hello World</a>
+            <a href="/2018/07/10/卡特朗数列/">卡特朗数列</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/10/物流运输/">物流运输</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/10/乘法逆元/">乘法逆元</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/10/孙子定理/">孙子定理</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/10/扩欧/">扩欧</a>
           </li>
         
       </ul>
