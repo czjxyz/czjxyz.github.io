@@ -68,6 +68,141 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-floyd" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/11/floyd/" class="article-date">
+  <time datetime="2018-07-11T13:13:13.000Z" itemprop="datePublished">2018-07-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/11/floyd/">floyd</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="用处"><a href="#用处" class="headerlink" title="用处"></a>用处</h3><p>单源最短路径。</p>
+<h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3><p>枚举一个中间点和一个起点和终点，用$d[i][k]+d[k][i]$来更新$d[i][j]$。</p>
+<p>复杂度$O(n^3)$,但写起来方便（对于邻接矩阵）。</p>
+        
+          <p class="article-more-link">
+            <a href="/2018/07/11/floyd/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="czjxyz�.github.io/2018/07/11/floyd/" data-id="cjjh5fkle000150b64re05wbq" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/图论-单源最短路径/">图论 单源最短路径</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-bellman-ford" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/11/bellman-ford/" class="article-date">
+  <time datetime="2018-07-11T13:12:44.000Z" itemprop="datePublished">2018-07-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/11/bellman-ford/">bellman_ford</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="用处"><a href="#用处" class="headerlink" title="用处"></a>用处</h3><p>单源最短路径</p>
+<h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3><p>对图进行n-1次松弛，对于每一条边，我们尝试用起点去更新终点。</p>
+<p>bellman_ford能够解决负权边，以及判断一个图是否存在负环。</p>
+        
+          <p class="article-more-link">
+            <a href="/2018/07/11/bellman-ford/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="czjxyz�.github.io/2018/07/11/bellman-ford/" data-id="cjjh5fkll000350b6032ftbop" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/图论-单源最短路径/">图论 单源最短路径</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Dijsktra" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/11/Dijsktra/" class="article-date">
+  <time datetime="2018-07-11T13:12:28.000Z" itemprop="datePublished">2018-07-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/11/Dijsktra/">Dijsktra</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="用处"><a href="#用处" class="headerlink" title="用处"></a>用处</h3><p>单源最短路径</p>
+<p>稳定复杂度$O(n^2)$</p>
+<h3 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h3><p>在d值中找一个最小值，将他的子节点都松弛，并把其点标记掉。</p>
+        
+          <p class="article-more-link">
+            <a href="/2018/07/11/Dijsktra/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="czjxyz�.github.io/2018/07/11/Dijsktra/" data-id="cjjh5fkl7000050b6okkc15p6" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/图论-单源最短路径/">图论 单源最短路径</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-背包" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/07/10/背包/" class="article-date">
@@ -99,7 +234,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="czjxyz�.github.io/2018/07/10/背包/" data-id="cjjeypz8v000e14b65q6652fo" class="article-share-link">Share</a>
+      <a data-url="czjxyz�.github.io/2018/07/10/背包/" data-id="cjjh5fkm8000h50b6dlf2m735" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/背包/">背包</a></li></ul>
@@ -143,7 +278,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="czjxyz�.github.io/2018/07/10/卡特朗数列/" data-id="cjjeypz86000214b64eta7kmg" class="article-share-link">Share</a>
+      <a data-url="czjxyz�.github.io/2018/07/10/卡特朗数列/" data-id="cjjh5fklp000650b63aqvttnr" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数论/">数论</a></li></ul>
@@ -191,7 +326,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="czjxyz�.github.io/2018/07/10/物流运输/" data-id="cjjeypz8s000c14b6zvhj3c3n" class="article-share-link">Share</a>
+      <a data-url="czjxyz�.github.io/2018/07/10/物流运输/" data-id="cjjh5fkma000k50b6f8t0s6ea" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DP/">DP</a></li></ul>
@@ -236,7 +371,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="czjxyz�.github.io/2018/07/10/乘法逆元/" data-id="cjjeypz8k000914b66m6dpu2g" class="article-share-link">Share</a>
+      <a data-url="czjxyz�.github.io/2018/07/10/乘法逆元/" data-id="cjjh5fklt000850b6ac18wxia" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数论/">数论</a></li></ul>
@@ -280,7 +415,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="czjxyz�.github.io/2018/07/10/孙子定理/" data-id="cjjeypz82000114b6z0203tan" class="article-share-link">Share</a>
+      <a data-url="czjxyz�.github.io/2018/07/10/孙子定理/" data-id="cjjh5fklw000a50b6ni21bm65" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数论/">数论</a></li></ul>
@@ -323,7 +458,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="czjxyz�.github.io/2018/07/10/扩欧/" data-id="cjjeypz8h000714b6tig0ofly" class="article-share-link">Share</a>
+      <a data-url="czjxyz�.github.io/2018/07/10/扩欧/" data-id="cjjh5fkm6000g50b6eyp163ot" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数论/">数论</a></li></ul>
@@ -366,7 +501,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="czjxyz�.github.io/2018/07/10/快速幂/" data-id="cjjeypz8c000414b6tsxkgs2m" class="article-share-link">Share</a>
+      <a data-url="czjxyz�.github.io/2018/07/10/快速幂/" data-id="cjjh5fkm1000c50b6n5j69q8c" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数论/">数论</a></li></ul>
@@ -378,96 +513,11 @@
 
 
   
-    <article id="post-尺取" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/07/10/尺取/" class="article-date">
-  <time datetime="2018-07-09T23:53:42.000Z" itemprop="datePublished">2018-07-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/10/尺取/">尺取</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="知识点梳理"><a href="#知识点梳理" class="headerlink" title="知识点梳理"></a>知识点梳理</h1><p>尺取法：顾名思义，像尺子一样取一段，借用挑战书上面的话说，尺取法通常是对数组保存一对下标，即所选取的区间的左右端点，然后根据实际情况不断地推进区间左右端点以得出答案。之所以需要掌握这个技巧，是因为尺取法比直接暴力枚举区间效率高很多，尤其是数据量大的 。（摘自百度）</p>
-<p>一道题目，用尺取法需知在什么时候移动那个下标，这样移动下标的正确性。也就是说，对于处理完的区间，要满足单调性，对于固定的左端点，找出满足解的最近右端点，在右端点之后的左端点都能满足题意，那么这一组解就是我们需要的，再移动做端点。</p>
-        
-          <p class="article-more-link">
-            <a href="/2018/07/10/尺取/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="czjxyz�.github.io/2018/07/10/尺取/" data-id="cjjeypz8f000514b6x4fo2jqy" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/尺取/">尺取</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
 
 
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/07/10/hello-world/" class="article-date">
-  <time datetime="2018-07-09T23:20:21.327Z" itemprop="datePublished">2018-07-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/10/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="czjxyz�.github.io/2018/07/10/hello-world/" data-id="cjjeypz7u000014b6na6nywo3" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
+  <nav id="page-nav">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">__('next') &raquo;</a>
+  </nav>
 </section>
         
           <aside id="sidebar">
@@ -479,7 +529,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/DP/">DP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/尺取/">尺取</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数论/">数论</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/背包/">背包</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/DP/">DP</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/图论-单源最短路径/">图论 单源最短路径</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/尺取/">尺取</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数论/">数论</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/背包/">背包</a></li></ul>
     </div>
   </div>
 
@@ -489,7 +539,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/DP/" style="font-size: 10px;">DP</a> <a href="/tags/尺取/" style="font-size: 10px;">尺取</a> <a href="/tags/数论/" style="font-size: 20px;">数论</a> <a href="/tags/背包/" style="font-size: 10px;">背包</a>
+      <a href="/tags/DP/" style="font-size: 10px;">DP</a> <a href="/tags/图论-单源最短路径/" style="font-size: 15px;">图论 单源最短路径</a> <a href="/tags/尺取/" style="font-size: 10px;">尺取</a> <a href="/tags/数论/" style="font-size: 20px;">数论</a> <a href="/tags/背包/" style="font-size: 10px;">背包</a>
     </div>
   </div>
 
@@ -511,23 +561,23 @@
       <ul>
         
           <li>
+            <a href="/2018/07/11/floyd/">floyd</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/11/bellman-ford/">bellman_ford</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/11/Dijsktra/">Dijsktra</a>
+          </li>
+        
+          <li>
             <a href="/2018/07/10/背包/">背包</a>
           </li>
         
           <li>
             <a href="/2018/07/10/卡特朗数列/">卡特朗数列</a>
-          </li>
-        
-          <li>
-            <a href="/2018/07/10/物流运输/">物流运输</a>
-          </li>
-        
-          <li>
-            <a href="/2018/07/10/乘法逆元/">乘法逆元</a>
-          </li>
-        
-          <li>
-            <a href="/2018/07/10/孙子定理/">孙子定理</a>
           </li>
         
       </ul>
