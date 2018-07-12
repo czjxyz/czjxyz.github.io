@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="数论," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -77,16 +77,15 @@
 
 
 
-<meta name="description" content="求解问题已知a，b，求x，y使得ax+by=gcd（a，b）">
-<meta property="og:type" content="article">
-<meta property="og:title" content="扩欧">
-<meta property="og:url" content="czjxyz�.github.io/2018/07/10/扩欧/index.html">
+<meta name="description" content="学习笔记">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Konnyaku_czjxyz_blog">
+<meta property="og:url" content="czjxyz�.github.io/tags/图论-最小生成树/index.html">
 <meta property="og:site_name" content="Konnyaku_czjxyz_blog">
-<meta property="og:description" content="求解问题已知a，b，求x，y使得ax+by=gcd（a，b）">
-<meta property="og:updated_time" content="2018-07-10T00:05:28.418Z">
+<meta property="og:description" content="学习笔记">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="扩欧">
-<meta name="twitter:description" content="求解问题已知a，b，求x，y使得ax+by=gcd（a，b）">
+<meta name="twitter:title" content="Konnyaku_czjxyz_blog">
+<meta name="twitter:description" content="学习笔记">
 
 
 
@@ -116,13 +115,13 @@
 
 
 
-  <link rel="canonical" href="czjxyz�.github.io/2018/07/10/扩欧/"/>
+  <link rel="canonical" href="czjxyz�.github.io/tags/图论-最小生成树/"/>
 
 
 
 
 
-  <title>扩欧 | Konnyaku_czjxyz_blog</title>
+  <title>标签: 图论 最小生成树 | Konnyaku_czjxyz_blog</title>
   
 
 
@@ -141,7 +140,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -225,154 +224,54 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
+  
+  
+  
+  <div class="post-block tag">
 
-  
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h1>图论 最小生成树<small>标签</small>
+        </h1>
+      </div>
 
-  
-  
-  
+      
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="czjxyz�.github.io/2018/07/10/扩欧/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="czjxyz">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Konnyaku_czjxyz_blog">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
-        
-          <h1 class="post-title" itemprop="name headline">扩欧</h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
+            <a class="post-title-link" href="/2018/07/12/并查集a-Krukal/" itemprop="url">
               
-                <span class="post-meta-item-text">发表于</span>
+                <span itemprop="name">并查集+Krukal</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-10T07:55:28+08:00">
-                2018-07-10
-              </time>
-            
+            </a>
+        
+      </h2>
 
-            
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2018-07-12T08:09:24+08:00"
+              content="2018-07-12" >
+          07-12
+        </time>
+      </div>
 
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <h1 id="求解问题"><a href="#求解问题" class="headerlink" title="求解问题"></a>求解问题</h1><p>已知a，b，求x，y使得ax+by=gcd（a，b）</p>
-<a id="more"></a>
-<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>利用欧几里得递推可得<br>gcd(a,b)=gcd(b,a%b)<br>ax+by=bX+(a%b)Y<br>(b(a/b)+a%b)x+by=bX+(a%b)Y<br>b((a/b)x+y-X)+(a%b)(x-Y)=0<br>–&gt;<br>X=(a/b)x+y,Y=x<br>以上便递推式</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> LL long long</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line">LL a,b,x=<span class="number">1</span>,y=<span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">gcd</span><span class="params">(LL n,LL m)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(m==<span class="number">0</span>) <span class="keyword">return</span>;</span><br><span class="line">    gcd(m,n%m);</span><br><span class="line">    LL p=x;</span><br><span class="line">    x=y;</span><br><span class="line">    y=p-n/m*y;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    ios::sync_with_stdio(<span class="literal">false</span>);</span><br><span class="line">    LL a,b; </span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;a&gt;&gt;b;</span><br><span class="line">    gcd(a,b);</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;(x+b)%b;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/数论/" rel="tag"># 数论</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2018/07/10/快速幂/" rel="next" title="快速幂">
-                <i class="fa fa-chevron-left"></i> 快速幂
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/07/10/孙子定理/" rel="prev" title="孙子定理">
-                孙子定理 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
+    </header>
   </article>
 
 
-
-    <div class="post-spread">
       
     </div>
+
   </div>
+  
+  
+  
+
+  
 
 
           </div>
@@ -380,10 +279,6 @@
 
 
           
-
-  
-
-
 
         </div>
         
@@ -404,17 +299,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -487,22 +373,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#求解问题"><span class="nav-number">1.</span> <span class="nav-text">求解问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#原理"><span class="nav-number">1.1.</span> <span class="nav-text">原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number">1.2.</span> <span class="nav-text">代码</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -643,10 +513,6 @@
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
 
   
 

@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="数论," />
+  <meta name="keywords" content="图论 最小生成树," />
 
 
 
@@ -77,16 +77,16 @@
 
 
 
-<meta name="description" content="求解问题已知a，b，求x，y使得ax+by=gcd（a，b）">
+<meta name="description" content="用处最小生成树，给定n个点，m条边，求将所有点连起来的最小花费。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="扩欧">
-<meta property="og:url" content="czjxyz�.github.io/2018/07/10/扩欧/index.html">
+<meta property="og:title" content="并查集+Krukal">
+<meta property="og:url" content="czjxyz�.github.io/2018/07/12/并查集a-Krukal/index.html">
 <meta property="og:site_name" content="Konnyaku_czjxyz_blog">
-<meta property="og:description" content="求解问题已知a，b，求x，y使得ax+by=gcd（a，b）">
-<meta property="og:updated_time" content="2018-07-10T00:05:28.418Z">
+<meta property="og:description" content="用处最小生成树，给定n个点，m条边，求将所有点连起来的最小花费。">
+<meta property="og:updated_time" content="2018-07-12T00:10:36.705Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="扩欧">
-<meta name="twitter:description" content="求解问题已知a，b，求x，y使得ax+by=gcd（a，b）">
+<meta name="twitter:title" content="并查集+Krukal">
+<meta name="twitter:description" content="用处最小生成树，给定n个点，m条边，求将所有点连起来的最小花费。">
 
 
 
@@ -116,13 +116,13 @@
 
 
 
-  <link rel="canonical" href="czjxyz�.github.io/2018/07/10/扩欧/"/>
+  <link rel="canonical" href="czjxyz�.github.io/2018/07/12/并查集a-Krukal/"/>
 
 
 
 
 
-  <title>扩欧 | Konnyaku_czjxyz_blog</title>
+  <title>并查集+Krukal | Konnyaku_czjxyz_blog</title>
   
 
 
@@ -239,7 +239,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="czjxyz�.github.io/2018/07/10/扩欧/">
+    <link itemprop="mainEntityOfPage" href="czjxyz�.github.io/2018/07/12/并查集a-Krukal/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="czjxyz">
@@ -256,7 +256,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">扩欧</h1>
+          <h1 class="post-title" itemprop="name headline">并查集+Krukal</h1>
         
 
         <div class="post-meta">
@@ -268,8 +268,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-10T07:55:28+08:00">
-                2018-07-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-12T08:09:24+08:00">
+                2018-07-12
               </time>
             
 
@@ -306,10 +306,10 @@
       
 
       
-        <h1 id="求解问题"><a href="#求解问题" class="headerlink" title="求解问题"></a>求解问题</h1><p>已知a，b，求x，y使得ax+by=gcd（a，b）</p>
+        <h3 id="用处"><a href="#用处" class="headerlink" title="用处"></a>用处</h3><p>最小生成树，给定n个点，m条边，求将所有点连起来的最小花费。</p>
 <a id="more"></a>
-<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>利用欧几里得递推可得<br>gcd(a,b)=gcd(b,a%b)<br>ax+by=bX+(a%b)Y<br>(b(a/b)+a%b)x+by=bX+(a%b)Y<br>b((a/b)x+y-X)+(a%b)(x-Y)=0<br>–&gt;<br>X=(a/b)x+y,Y=x<br>以上便递推式</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> LL long long</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line">LL a,b,x=<span class="number">1</span>,y=<span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">gcd</span><span class="params">(LL n,LL m)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(m==<span class="number">0</span>) <span class="keyword">return</span>;</span><br><span class="line">    gcd(m,n%m);</span><br><span class="line">    LL p=x;</span><br><span class="line">    x=y;</span><br><span class="line">    y=p-n/m*y;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    ios::sync_with_stdio(<span class="literal">false</span>);</span><br><span class="line">    LL a,b; </span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;a&gt;&gt;b;</span><br><span class="line">    gcd(a,b);</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;(x+b)%b;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3><p>按边的权值从小到大排序，在依次遍历，判断该边的起点和终点是否在一个联通分量中。若是，不进行操作，若不是，则将它们放入同一联通分量中，并加入该边。</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> M 100005</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> b[M],e[M],w[M],r[M],f[M];</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span>&#123;<span class="keyword">return</span> w[x]&lt;w[y];&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">find</span><span class="params">(<span class="keyword">int</span> p)</span></span>&#123;<span class="keyword">return</span> f[p]==p?p:f[p]=find(f[p]);&#125;<span class="comment">//并查集 </span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	ios::sync_with_stdio(<span class="literal">false</span>);</span><br><span class="line">    <span class="keyword">int</span> n,m,ans=<span class="number">0</span>;<span class="built_in">cin</span>&gt;&gt;n&gt;&gt;m;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;i++) <span class="built_in">cin</span>&gt;&gt;b[i]&gt;&gt;e[i]&gt;&gt;w[i],r[i]=i;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) f[i]=i;<span class="comment">//初始化 </span></span><br><span class="line">    sort(r+<span class="number">1</span>,r+m+<span class="number">1</span>,cmp);<span class="comment">//按边长排序编号 </span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;i++)&#123;</span><br><span class="line">        <span class="keyword">int</span> t=r[i];</span><br><span class="line">        <span class="keyword">int</span> x=find(b[t]),y=find(e[t]);</span><br><span class="line">        <span class="keyword">if</span>(x!=y)&#123;<span class="comment">//不在一个联通分量 </span></span><br><span class="line">            ans+=w[t]; </span><br><span class="line">            f[x]=y;<span class="comment">//放入同一联通分量</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;ans;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -327,7 +327,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/数论/" rel="tag"># 数论</a>
+            <a href="/tags/图论-最小生成树/" rel="tag"># 图论 最小生成树</a>
           
         </div>
       
@@ -340,8 +340,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/07/10/快速幂/" rel="next" title="快速幂">
-                <i class="fa fa-chevron-left"></i> 快速幂
+              <a href="/2018/07/11/floyd/" rel="next" title="floyd">
+                <i class="fa fa-chevron-left"></i> floyd
               </a>
             
           </div>
@@ -349,10 +349,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/07/10/孙子定理/" rel="prev" title="孙子定理">
-                孙子定理 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -497,7 +493,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#求解问题"><span class="nav-number">1.</span> <span class="nav-text">求解问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#原理"><span class="nav-number">1.1.</span> <span class="nav-text">原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number">1.2.</span> <span class="nav-text">代码</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#用处"><span class="nav-number">1.</span> <span class="nav-text">用处</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实现"><span class="nav-number">2.</span> <span class="nav-text">实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a></li></ol></div>
             
 
           </div>
