@@ -88,7 +88,7 @@
 具备栈的特点，即后进先出。
 具备单调性，也就是说栈中元素严格单调递增或者单调递减。">
 <meta property="og:image" content="https://odzkskevi.qnssl.com/eb5960f09a1245ebe970bb7af6446b63?v=1523793475">
-<meta property="og:updated_time" content="2018-07-12T14:12:56.666Z">
+<meta property="og:updated_time" content="2018-07-13T12:51:36.773Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="单调栈">
 <meta name="twitter:description" content="特点
@@ -321,7 +321,7 @@
 <a id="more"></a>
 <h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>对一个入栈的元素，要先将比它大或者比它小的元素全部弹出栈中，再将元素入栈。可以使用stl的栈或者手打栈。手打栈可以使用监视哨防止栈越界。</p>
 <h2 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h2><h3 id="A-Largest-Rectangle-in-a-Histogram-poj-2599"><a href="#A-Largest-Rectangle-in-a-Histogram-poj-2599" class="headerlink" title="A - Largest Rectangle in a Histogram(poj-2599)"></a>A - Largest Rectangle in a Histogram(poj-2599)</h3><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>直方图是由在共同基线上排列的矩形序列组成的多边形。矩形具有相等的宽度，但可以具有不同的高度。例如，左边的图显示了由高度为2, 1, 4、5, 1, 3、3的矩形组成的直方图，其中单位为矩形的宽度为1：  </p>
-<p><img src="https://odzkskevi.qnssl.com/eb5960f09a1245ebe970bb7af6446b63?v=1523793475" alt=""></p>
+<p><img src="https://odzkskevi.qnssl.com/eb5960f09a1245ebe970bb7af6446b63?v=1523793475" alt="Picture 1"></p>
 <p>通常，直方图用于表示离散分布，例如文本中字符的频率。请注意，矩形的顺序，即它们的高度，是重要的。在直方图中计算最大矩形的面积，该直方图也是在公共基线上对齐的。右边的图形显示了直方图中最大的对齐矩形。 </p>
 <h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>最暴力的方法是$O(n^3)$显然会挂，然后我们可以枚举一个左端点，求出满足条件的最优右端点，$O(n^2)$还是会挂。</p>
 <p>正解：枚举一个$i$，假设$A[i]$是最小的，那么我们只需要在$i$的左右两侧求出第一个小于$A[i]$的下标，就可以计算了。</p>
@@ -369,6 +369,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/07/13/The-Race/" rel="prev" title="The_Race">
+                The_Race <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -445,7 +449,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">18</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
